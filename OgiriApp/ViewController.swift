@@ -52,6 +52,10 @@ class ViewController: UIViewController {
         
         }
         
+        getImage(keyword: "funny")
+        
+        
+        
     }
 
     func getImage(keyword:String){
@@ -83,6 +87,56 @@ class ViewController: UIViewController {
     
     }
 
+    
+    @IBAction func nextOdai(_ sender: Any) {
+   
+    count = count + 1
+        
+        if searchTextFild.text == ""{
+          
+            getImage(keyword: "funny")
+      
+        }else{
+        
+            
+            getImage(keyword: searchTextFild.text!)
+        }
+        
+    
+
+
+
+
+
+    }
+    
+    
+    
+    @IBAction func searchAction(_ sender: Any) {
+    
+        self.count = 0
+        
+        if searchTextFild.text == ""{
+          
+            getImage(keyword: "funny")
+      
+        }else{
+        
+            getImage(keyword: searchTextFild.text!)
+        }
+        
+    
+    
+    }
+    
+    
+    
+    @IBAction func next(_ sender: Any) {
+    
+    performSegue(withIdentifier: "next", sender: nil)
+    
+    }
+    
 
 }
 
