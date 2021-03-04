@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,7 @@
 		145C108D25F072F900FC8B28 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 145C108B25F072F900FC8B28 /* Main.storyboard */; };
 		145C108F25F072FB00FC8B28 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 145C108E25F072FB00FC8B28 /* Assets.xcassets */; };
 		145C109225F072FB00FC8B28 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 145C109025F072FB00FC8B28 /* LaunchScreen.storyboard */; };
+		145C10A225F0C73F00FC8B28 /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145C10A125F0C73F00FC8B28 /* ShareViewController.swift */; };
 		D2502893E0E81E2434C49A10 /* Pods_OgiriApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B5A4F2FD4B7620C2E53147C /* Pods_OgiriApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +26,7 @@
 		145C108E25F072FB00FC8B28 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		145C109125F072FB00FC8B28 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		145C109325F072FB00FC8B28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		145C10A125F0C73F00FC8B28 /* ShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
 		1B5A4F2FD4B7620C2E53147C /* Pods_OgiriApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OgiriApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		77FF7D3929FE39D264002D84 /* Pods-OgiriApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OgiriApp.debug.xcconfig"; path = "Target Support Files/Pods-OgiriApp/Pods-OgiriApp.debug.xcconfig"; sourceTree = "<group>"; };
 		B66F063633BD3E73F1651798 /* Pods-OgiriApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OgiriApp.release.xcconfig"; path = "Target Support Files/Pods-OgiriApp/Pods-OgiriApp.release.xcconfig"; sourceTree = "<group>"; };
@@ -48,7 +50,6 @@
 				77FF7D3929FE39D264002D84 /* Pods-OgiriApp.debug.xcconfig */,
 				B66F063633BD3E73F1651798 /* Pods-OgiriApp.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -76,6 +77,7 @@
 				145C108525F072F900FC8B28 /* AppDelegate.swift */,
 				145C108725F072F900FC8B28 /* SceneDelegate.swift */,
 				145C108925F072F900FC8B28 /* ViewController.swift */,
+				145C10A125F0C73F00FC8B28 /* ShareViewController.swift */,
 				145C108B25F072F900FC8B28 /* Main.storyboard */,
 				145C108E25F072FB00FC8B28 /* Assets.xcassets */,
 				145C109025F072FB00FC8B28 /* LaunchScreen.storyboard */,
@@ -208,6 +210,7 @@
 			files = (
 				145C108A25F072F900FC8B28 /* ViewController.swift in Sources */,
 				145C108625F072F900FC8B28 /* AppDelegate.swift in Sources */,
+				145C10A225F0C73F00FC8B28 /* ShareViewController.swift in Sources */,
 				145C108825F072F900FC8B28 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

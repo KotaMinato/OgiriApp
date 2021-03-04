@@ -67,8 +67,21 @@ class ViewController: UIViewController {
             switch response.result{
             case .success:
                 let json:JSON = JSON(response.data as Any)
-                let imageString = json["hits"][ self.count]["wbformatURL"].string
-                self.odaiImageView.sd_setImage(with: URL(string: imageString!), completed: nil)
+                var imageString = json["hits"][ self.count]["wbformatURL"].string
+                
+                if imageString == nil{
+                    
+                    imageString = json["hits"][0]["wbformatURL"].string
+                
+                }else{
+                    
+                    
+                    self.odaiImageView.sd_setImage(with: URL(string: imageString!), completed: nil)
+                }
+                
+                
+                
+               
                 
                 
             
@@ -138,5 +151,15 @@ class ViewController: UIViewController {
     }
     
 
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let shareVC = segue.destination as?
+        ShareViewController
+        shareVC?.commentString = commentTextView.text
+        shareVC?.resultImage = odaiImageView.image!
+    
+    }
+    
+    
+    
 }
 
