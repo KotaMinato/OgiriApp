@@ -13,6 +13,7 @@
 		145C108D25F072F900FC8B28 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 145C108B25F072F900FC8B28 /* Main.storyboard */; };
 		145C108F25F072FB00FC8B28 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 145C108E25F072FB00FC8B28 /* Assets.xcassets */; };
 		145C109225F072FB00FC8B28 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 145C109025F072FB00FC8B28 /* LaunchScreen.storyboard */; };
+		D2502893E0E81E2434C49A10 /* Pods_OgiriApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B5A4F2FD4B7620C2E53147C /* Pods_OgiriApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,9 @@
 		145C108E25F072FB00FC8B28 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		145C109125F072FB00FC8B28 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		145C109325F072FB00FC8B28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1B5A4F2FD4B7620C2E53147C /* Pods_OgiriApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OgiriApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		77FF7D3929FE39D264002D84 /* Pods-OgiriApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OgiriApp.debug.xcconfig"; path = "Target Support Files/Pods-OgiriApp/Pods-OgiriApp.debug.xcconfig"; sourceTree = "<group>"; };
+		B66F063633BD3E73F1651798 /* Pods-OgiriApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OgiriApp.release.xcconfig"; path = "Target Support Files/Pods-OgiriApp/Pods-OgiriApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2502893E0E81E2434C49A10 /* Pods_OgiriApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		00B6B6497D87A6542EAF8343 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				77FF7D3929FE39D264002D84 /* Pods-OgiriApp.debug.xcconfig */,
+				B66F063633BD3E73F1651798 /* Pods-OgiriApp.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		145C107925F072F900FC8B28 = {
 			isa = PBXGroup;
 			children = (
 				145C108425F072F900FC8B28 /* OgiriApp */,
 				145C108325F072F900FC8B28 /* Products */,
+				00B6B6497D87A6542EAF8343 /* Pods */,
+				A8E63EAA065A571103D7FF25 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +84,14 @@
 			path = OgiriApp;
 			sourceTree = "<group>";
 		};
+		A8E63EAA065A571103D7FF25 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1B5A4F2FD4B7620C2E53147C /* Pods_OgiriApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 145C109625F072FB00FC8B28 /* Build configuration list for PBXNativeTarget "OgiriApp" */;
 			buildPhases = (
+				DCC498BA825FE497559A1DBF /* [CP] Check Pods Manifest.lock */,
 				145C107E25F072F900FC8B28 /* Sources */,
 				145C107F25F072F900FC8B28 /* Frameworks */,
 				145C108025F072F900FC8B28 /* Resources */,
+				BF80D55907500F03C3A887EE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -131,6 +158,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		BF80D55907500F03C3A887EE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OgiriApp/Pods-OgiriApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OgiriApp/Pods-OgiriApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OgiriApp/Pods-OgiriApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DCC498BA825FE497559A1DBF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OgiriApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		145C107E25F072F900FC8B28 /* Sources */ = {
@@ -283,6 +352,7 @@
 		};
 		145C109725F072FB00FC8B28 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 77FF7D3929FE39D264002D84 /* Pods-OgiriApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -301,6 +371,7 @@
 		};
 		145C109825F072FB00FC8B28 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B66F063633BD3E73F1651798 /* Pods-OgiriApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
